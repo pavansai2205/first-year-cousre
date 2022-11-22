@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Anchor tag
+        Purpose: It is used to connect files. It may an html document, image, video, audio, etc.
+
+        Attributes:
+
+        1. href: (hyper reference)
+            The link or the URL of the document you want to connect.
+            Text Formatting: Underlined, colored
+        
+            Three types of colors:
+            Blue: When a link is not visited, it is in blue color
+            Purple: A visited link is in purple color
+            Red: When a link is active, then it is in red color. When the browser is loading the resource, the link is in active mode.
+            You can see the active link by right or left on it or when you simply click on it, it becomes red for a moment.
+
+        2. target attribute:
+
+            _blank: It opens the link on a new window.
+            _self: It opens the link in the same frame (Default value).
+            _parent: It opens the link in the parent frame
+            _top: It opens the link in the full window
+            framename: Custom frame where the link opens
+
+    -->
+
+    <!--
+        Absolute Path: The path from the root of the computer system
+        Relative Path: 
+            The path from the folder where the current file (anchor.html) is present to the linked document (forms.html).
+    -->
+
+    <!--
+        hreflang: It specifies the language of the linked document
+        rel: It specifies the relationship between linked documents.
+        download: It will download the file, instead of visiting the file
+    -->
+
+    <h2>Anchor Tag</h2>
+    <hr>
+    <a href="https://www.yahoo.com" target="_blank">Yahoo</a>
+    <br /> <br />
+    <a href="https://www.google.com" target="_self">Google</a>
+    <br /> <br />
+    <a href="/home/captain/IP_KOC30/forms.html">Local Form by Absolute Path</a>
+    <br /> <br />
+    <a href="forms.html" hreflang="en">Local Form by Relative Path</a>
+
+    <h2>
+        E-Mail Someone using anchor tag
+    </h2>
+
+    <a href="mailto:amanchourasiya1004@gmail.com">Send Mail</a>
+</body>
+</html>

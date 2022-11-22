@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        form tag: Form tag is used for creating forms in html
+    -->
+    <form action="introduction.html" align="left">
+        <label for="name" id="nameLabel">Name:</label>
+        <input type="text" id="name" name="fullName" placeholder="Provide your Full name" value="Aman Chourasiya" maxlength="20" size="10" autofocus readonly required>
+        <br> <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete>
+        <br> <br>
+        <label for="age">Age:</label>
+        <input min="0" max="100" step="5" name="age" type="number" id="age" placeholder="Age">
+        <br> <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="Password" maxlength="5">
+        <br> <br>
+        <label for="birth_month">Birth Month:</label>
+        <input type="month" name="birthMonth" id="birth_month" placeholder="Birth Month">
+        <br> <br>
+        <label>Gender: </label>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+        <label for="other">Other</label>
+        <input type="radio" name="gender" id="other">
+        <br /> <br />
+        <label for="resume">Resume:</label>
+        <input type="file" id="resume" accept="image/*" multiple>
+        <br /> <br />
+        <label for="termsandconditions">I agree to the terms and conditions:</label>
+        <input type="checkbox" name="agree" id="termsandconditions">
+        <br> <br>
+        <input type="submit">
+    </form>
+
+    <!--
+        input tag: It is used for displaying input fields in html
+            Attributes:
+            1. type
+                text: Any input is valid
+                number: Only numeric data is allowed
+                email: It should be a valid email, the format should be valid
+                password: It encodes the input as special dots
+                checkbox: It creates a checkbox
+                date: Gives a date picker
+                datetime: We can input a valid datetime only
+                month: Any month of a year
+                submit: Creates a button
+            
+            2. id (universal or general): It is used to identify a tag uniquely.
+                id attribute can be provided for any tag.
+
+            3. placeholder: It is used to provide the placeholder text which disappers as soon as something is typed
+
+            4. min, max, step: These attributes are basically meant for the input element of type number
+
+            5. value: It specifies the initial value that should be set in an input field when the page is loaded
+
+            6. maxlength: It specifies how many characters are allowed in the input field
+
+            7. autofocus: The input element is automatically highlighted when the page loads
+
+            8. name: name attribute can be provided for input tag elements.
+                     It is used by the backend to get the values of the input fields.
+
+            9. readonly: If you provide the readonly attribute to any of the input fields then the input field is no longer editable.
+
+            10. accept: It is for the input element with type = file. Allows us to accept only one type of file using the input element.
+
+            11. required: The input field must be filled before submitting
+
+            12. size: Basically to enlarge or shrink the input field
+
+            13. multiple: If the user wants to input multiple files, then this multiple allows that.
+
+            14. autocomplete: The input field will have autocomplete feature
+
+            15. align: This can be used to align the form in the middle, right or left
+        
+            Boolean attributes: autofocus, autocomplete, multiple, readonly, disabled
+        label tag: Label tag is used to assign label to input elements
+            Attributes:
+            1. for: This attribute takes the id attribute of any input element
+            Using the for attribute we connect label tag and the corresponding input element.
+        
+        form tag: Used to create forms
+
+            Attributes:
+            1. action: It specifies where the data should go after submitting the form
+    -->
+</body>
+</html>
