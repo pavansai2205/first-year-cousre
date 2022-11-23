@@ -21,8 +21,8 @@ body {
     padding: 1.5rem 1rem;
 }
 
-.left.content,
-.right.content{
+.left-content,
+.right-content{
     display: flex;
     align-items: center;
 }
