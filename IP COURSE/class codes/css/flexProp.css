@@ -1,0 +1,18 @@
+.flexDiv {
+    background-color: blue;
+    display: flex;
+    /* There can be four values of flex-direction: row, row-reverse, column, column-reverse; */
+    flex-direction: row;
+
+    /* It is used to wrap the elements when they overflow. */
+    flex-wrap: wrap;
+
+    /* It decides the way space is distributed horizontally */
+    justify-content: space-evenly;
+}
+
+.flexDiv > div {
+    background-color: lightblue;
+    padding: 20px 30px;
+    margin: 20px;
+}

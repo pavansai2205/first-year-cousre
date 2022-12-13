@@ -1,0 +1,10 @@
+.prop {
+    /* Takes only that much space where the content is. Height and width does not work. */
+    /* display: inline; */
+
+    /* In inline-block, the element behaves like a block element. But takes up only the content-space. */
+    /* display: inline-block; */
+    
+    display: block;
+    border: 2px solid red;
+}

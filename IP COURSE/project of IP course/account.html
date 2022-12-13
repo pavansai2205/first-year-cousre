@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        div{
+            width: 40%;
+            height:50%;
+            background:#1e1f2e;
+            margin:auto;
+            border-radius: 0.5rem;
+            padding: 20px 0;
+        }
+        label{
+            font-size: 20px;
+            color:white;
+            padding:12px 10px;
+            margin: 1rem;
+        }
+        input[type=text],input[type=password],input[type=email]{
+            display:block;
+            width:70%;
+            padding:8px 8px;
+            margin:1rem 2rem ;
+            font-size: 20px;
+            border-radius: 0.7rem;
+            border:none;
+        }
+        input[type=submit]{
+            padding: 0 2rem;
+            font-size: 20px;
+            margin:1rem 0 ;
+            border-radius: 0.968rem;
+        }
+        input[type=submit]:hover{
+            background-color: #92601f;
+        }
+        h3{
+            text-align: center;
+            font-size: 30px;
+            margin:1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <script>
+       function account()
+        {
+            var name=document.Account.uname.value;
+            var email=document.Account.email.value;
+            var pass=document.Account.password.value;
+            var cpass=document.Account.cpassword.value;
+
+            if (name=="" || name==null)
+            {
+                alert("Name can't be empty");
+                return false;
+            }
+            else if(email=="" || email==null )
+            {
+                alert("email can't be empty");
+                return false;
+            }
+            else if(pass.length<8)
+            {
+                alert("password must be atleast of length 8");
+                return false;
+            }
+            else if(pass!=cpass)
+            {
+                alert("password and confirm password must be same");
+                return false;
+            }
+
+        }
+    </script>
+        <h3> Create new account</h3>
+    <div>
+        <form action="myaccount.jsp" method="post" name="Account" onsubmit="return account()">
+            <label for="uname">Name</label>
+            <input type="text" id="uname" name="uname" placeholder="Enter your name..">
+
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Enter your E-mail..">
+
+            <label for="password">Create Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter password">
+
+            <label for="cpassword">Confirm Password</label>
+            <input type="password" id="cpassword" name="cpassword" placeholder="Confirm password..">
+
+            <div><input type="submit" value="create account"></div>
+
+        </form>
+    </div>
+</body>
+</html>
